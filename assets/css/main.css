@@ -1,0 +1,735 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&display=swap");
+/* Basic styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  
+      background-image: url('./SF7\ rear\ lights.gif'); /* Path to your background image */
+      background-size: cover; /* Makes the background image cover the entire area */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+  
+      font-family: 'Roboto', sans-serif; /* Apply the chosen Google Font */
+      background-color: #333; /* Optional: dark background for contrast */
+      color: white; /* Set text color to white */
+ 
+}
+
+
+h2, h3,p {
+  color: white; /* Ensure headings are white */
+}
+
+/* Header and footer */
+header, footer {
+  background: linear-gradient(to right, #535151, #deba6d);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.hee {
+  background-image: url('./giphy_gif\ \(480×360\).gif');
+  background-size: cover; /* Cover the entire header */
+  background-position: center; /* Center the image */
+  height: 200px; /* Set a height for the header */
+  color: white; /* Text color */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center; /* Center text */
+}
+
+.fee{
+  
+      background-image: url('./BMW\ GIF.gif');
+      background-size: cover; /* Cover the entire header */
+      background-position: center; /* Center the image */
+      height: 90px; /* Set a height for the header */
+      color: white; /* Text color */
+      display: flex;
+      align-items: center; /* Center text vertically */
+      justify-content: center; /* Center text horizontally */
+      text-align: center; /* Center text */
+  }
+
+
+/* Main layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Column layout */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  padding: 20px;
+}
+
+/* Floated images */
+img.floated {
+  float: right;
+  margin-left: 20px;
+  max-width: 200px;
+}
+img.ban{
+  height: 300px;
+  width:600px
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  .sidebar {
+      flex: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .two-column {
+      display: flex;
+  }
+}
+
+
+
+
+.profile-image {
+  width: 40%; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px; /* Space between image and text */
+}
+
+.text-container {
+  flex: 1; /* Allow text container to take remaining space */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Aligns main content and the side image */
+}
+
+.main {
+  flex: 1; /* Allows the main section to take available space */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.product {
+  flex: 1; /* Distributes space evenly among products */
+  margin-right: 20px; /* Space between products */
+  text-align: center;
+}
+
+.product:last-child {
+  margin-right: 0; /* Removes right margin from the last product */
+}
+
+.side-image {
+  width: 30%; /* Adjust the width as needed */
+  padding: 20px; /* Space around the image */
+}
+
+.side-image img {
+  width: 100%; /* Makes the image responsive */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.about_section {
+  padding-top: 50px; /* Top padding */
+  padding-bottom: 50px; /* Bottom padding */
+  background-color: #f9f9f9; /* Light background color */
+}.img-box {
+  display: flex;
+  justify-content: center; /* Center the image box */
+  align-items: center; /* Center the image vertically */
+  height: 100%; /* Full height for alignment */
+  padding: 10px; /* Padding around the image */
+  border: 2px solid #4a90e2; /* Border color and thickness */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Animation for hover effect */
+  margin-left: 20px; /* Add left margin for spacing */
+}
+
+.img-box:hover {
+  transform: scale(1.05); /* Slightly enlarge the image box on hover */
+}
+
+.img-box img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  border: 1px solid #ccc; /* Light border around the image */
+  transition: transform 0.3s ease; /* Animation for image hover effect */
+}
+
+.img-box img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically within the column */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding for the detail box */
+  background-color: #fff; /* White background for the detail box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-right: 80px; /* Increased right margin for more spacing */
+}
+
+.detail-box h2 {
+  margin-bottom: 15px; /* Space below the heading */
+  font-size: 24px; /* Font size for the heading */
+  color: #333; /* Darker text color */
+}
+
+.detail-box p {
+  margin-bottom: 20px; /* Space below the paragraph */
+  font-size: 16px; /* Font size for the paragraph */
+  color: #666; /* Gray text color */
+}
+
+.detail-box a {
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #4a90e2; /* Button background color */
+  color: white; /* Text color for the button */
+  text-decoration: none; /* Remove underline from link */
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.detail-box a:hover {
+  background-color: #357ABD; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detail-box {
+      margin-top: 20px; /* Space above the detail box on smaller screens */
+      margin-right: 20px; /* Adjust right margin for smaller screens */
+  }
+}
+
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.layout-padding {
+  padding: 60px 0; /* Padding for sections */
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 40px; /* Space below heading */
+}
+
+.car-gallery {
+  display: flex;
+  justify-content: space-between; /* Space between car boxes */
+  flex-wrap: wrap; /* Wrap to the next line if needed */
+}
+
+.car-box {
+  background-color: #fff; /* White background for car boxes */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: 30%; /* Set width for three boxes in a row */
+  margin-bottom: 20px; /* Space below each box */
+  text-align: center; /* Center content in boxes */
+  transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.car-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.car-img-box img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.car-detail-box {
+  padding: 20px; /* Padding inside the detail box */
+}
+
+
+
+.rent-gallery {
+  display: flex;
+  justify-content: space-between; /* Space between rent boxes */
+  flex-wrap: wrap; /* Wrap to next line if needed */
+}
+
+.rent-box {
+  background-color: #fff; /* White background for rent boxes */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: 30%; /* Set width for three boxes in a row */
+  margin-bottom: 20px; /* Space below each box */
+  text-align: center; /* Center content in boxes */
+}
+
+.rent-img-box img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.rent-price {
+  background-color: #4a90e2; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px; /* Padding for price box */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px 0; /* Space above and below price */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .car-box, .rent-box {
+      width: 100%; /* Full width on small screens */
+  }
+
+  .car-gallery, .rent-gallery {
+      flex-direction: column; /* Stack boxes vertically */
+      align-items: center; /* Center align boxes */
+  }
+}
+
+.content-wrapper {
+  max-width: 1200px; /* Max width for layout */
+  margin: 0 auto; /* Center the wrapper */
+  padding: 20px; /* Padding around the wrapper */
+}
+
+/* .layout-padding {
+  padding: 60px 0;
+} */
+
+.rental-gallery {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Wrap to next line if necessary */
+  justify-content: space-between; /* Space between rental cards */
+  margin-bottom: 40px; /* Space below gallery */
+}
+
+.rental-card {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: calc(30% - 20px); /* Responsive width with margin consideration */
+  margin: 10px; /* Margin around each card */
+  text-align: center; /* Center the content */
+  transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.rental-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.image-wrapper img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.button-wrapper {
+  text-align: center; /* Center the button */
+}
+
+.button-wrapper a {
+  padding: 15px 30px; /* Padding for button */
+  background-color: #4a90e2; /* Button background color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button-wrapper a:hover {
+  background-color: #357ABD; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rental-card {
+      width: calc(45% - 20px); /* Two cards in a row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .rental-card {
+      width: 100%; /* Full width on very small screens */
+  }
+}
+
+
+
+.price-tag {
+  margin-top: 10px; /* Space above the price tag */
+  margin-bottom: 10px;
+
+}
+
+.price-tag .button-85 {
+  background-color: #4a90e2; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for button */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.main-image {
+  width: 100%; /* Full width of its container */
+  max-width: 800px; /* Increase the maximum width for a landscape effect */
+  height: 400px; /* Set a specific height to create a landscape aspect */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+  margin: 20px 0; /* Space above and below the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-image {
+      max-width: 100%; /* Allow full width on smaller screens */
+      height: auto; /* Reset height for responsiveness */
+  }
+}
+
+.two-column-layout {
+  display: flex; /* Use flexbox for layout */
+}
+
+.about-section {
+  flex: 1; /* Adjust this value to reduce the width */
+  max-width: 30%; /* Set a maximum width */
+  padding: 20px; /* Add some padding */
+}
+
+.video-section {
+  flex: 2; /* This can be adjusted to make the video section wider */
+  padding: 20px; /* Add some padding */
+}
+
+.rental-video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .two-column-layout {
+      flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .video-section {
+      margin-right: 0; /* Remove right margin on smaller screens */
+      margin-bottom: 20px; /* Space below video */
+  }
+}
+
+/* CONTACT */
+
+.contact-section {
+ 
+  padding: 40px 20px; /* Padding for the section */
+}
+
+.contact-wrapper {
+  max-width: 800px; /* Maximum width for the content */
+  margin: 0 auto; /* Center the section */
+  text-align: center; /* Center text */
+}
+
+.contact-section h2 {
+  color: white; /* Dark color for headings */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.contact-section p {
+  color:white; /* Gray color for text */
+  margin-bottom: 40px; /* Space below paragraph */
+}
+
+.contact-info {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  margin-bottom: 40px; /* Space below contact info */
+}
+
+.info-item {
+  flex: 1; /* Allow items to grow */
+  margin: 0 10px; /* Space between items */
+ 
+  padding: 15px; /* Padding inside info items */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+.contact-form {
+  display: flex; /* Flexbox for form layout */
+  flex-direction: column; /* Stack form fields vertically */
+  margin-bottom: 40px; /* Space below form */
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 15px; /* Space between fields */
+  padding: 10px; /* Padding inside fields */
+  border: 1px solid #ccc; /* Border for fields */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-info {
+      flex-direction: column; /* Stack info items vertically on smaller screens */
+  }
+}
+
+
+
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100px;
+  font-size: 24px;
+}
+
+.sidebar {
+   /* Light background for sidebar */
+  padding: 20px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.support-box {
+  background-image: url('./AMG\ MERCEDES.jpg');
+  background-size: cover; /* Cover the entire header */
+   /* Center the image */
+  height: 300px;
+  width: 250PX; /* Set a height for the header */
+  padding: 15px; /* Padding inside the support box */
+  border-radius: 5px; /* Rounded corners for the box */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  border: #111;
+}
+
+.support-links {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+ 
+}
+
+.support-links li {
+  margin-bottom: 15px; /* Space between links */
+}
+
+.support-links a {
+  display: block; /* Make links block-level for full width */
+  padding: 12px 15px; /* Padding inside the links */
+  font-size: 18px; /* Larger font size */
+  color: #003d82; /* Link color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  
+}
+
+.support-links a:hover {
+ background-color: #e1e1e1; /* Light gray background on hover */
+  color: #003d7a; /* Darker shade on hover */
+} 
+
+.footer {
+  background-color: #333; /* Dark background for contrast */
+  color: white; /* White text for visibility */
+  text-align: center; /* Center the text */
+  padding: 15px 0; /* Padding for spacing */
+  position: relative; /* Ensure it can be positioned properly */
+  bottom: 0; /* Stick it to the bottom if needed */
+  width: 100%; /* Full width */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Adjust font size as necessary */
+}
+
+.support-box2 {
+  background-image: url('./box2.jpg');
+  background-size: cover; /* Cover the entire header */
+   /* Center the image */
+  height: 600px;
+  width: 250PX; /* Set a height for the header */
+  padding: 15px; /* Padding inside the support box */
+  border-radius: 5px; /* Rounded corners for the box */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  border: #111;
+}
+
+
+/* General navbar styling */
+.navbar {
+  background-color: #f8f9fa; /* Light background */
+  padding: 10px 20px; /* Padding for navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Brand styling */
+.navbar-brand img {
+  height: 50px; /* Logo height */
+  width: 50px; /* Logo width */
+  border-radius: 10px; /* Rounded logo */
+}
+
+/* Navbar items */
+.navbar-nav {
+  flex-direction: row; /* Align items in a row */
+  margin: 0; /* Remove default margin */
+}
+
+/* Navbar links */
+.nav-link {
+  background-color: #ffffff; /* White background for links */
+  color: #333; /* Dark color for text */
+  padding: 10px 15px; /* Padding for link boxes */
+  margin: 5px; /* Margin between links */
+  border-radius: 5px; /* Rounded corners for boxes */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  display: inline-block; /* Allow padding and margin */
+}
+
+/* Navbar link hover effects */
+.nav-link:hover {
+  background-color: #e4eaf2; /* Change background on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Active link styling */
+.nav-link.active {
+  background-color: #c6e3f6; /* Active background color */
+  color: #fff; /* Active text color */
+}
+
+/* Toggler button styling */
+.navbar-toggler {
+  border-color: #d9534f; /* Red border for toggler */
+}
+
+/* Toggler icon */
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="%23d9534f"%3E%3Cpath stroke="rgba(0,0,0,0.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Custom red toggler icon */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack links vertically on mobile */
+    width: 100%; /* Full width for links */
+  }
+
+  .nav-link {
+    width: 100%; /* Make links full width */
+    text-align: center; /* Center text */
+    margin: 5px 0; /* Margin for vertical spacing */
+  }
+}

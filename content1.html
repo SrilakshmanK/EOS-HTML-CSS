@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Mobile Shop - Features</title>
+
+  <style>
+    .our-cars-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-image {
+      width: 100%;
+      display: none;
+      /* Hide all images by default */
+    }
+
+    .carousel-image:first-child {
+      display: block;
+      /* Show the first image */
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-dark text-white text-center py-4 hee">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="./assets/img/rentlogo.png" style="height: 50px; width: 50px; border-radius: 10px;" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./content1.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./content2.html">Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <section class="two-column-layout">
+
+    <aside class="about-section">
+      <h2>About Us</h2>
+      <p>
+        At our car rental service, we pride ourselves on offering a diverse fleet of vehicles to meet all your travel
+        needs. Whether you are planning a business trip, a family vacation, or a spontaneous getaway, we have the
+        perfect car for you. Our fleet includes compact cars, SUVs, and luxury vehicles, all maintained to the highest
+        standards.
+      </p>
+
+      <h3>Our Brand Audio</h3>
+      <audio controls>
+        <source src="./assets/aud/audi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <h3>Our Details</h3>
+      <a href="./SuperCar.pdf" target="_blank">Download PDF</a>
+    </aside>
+
+    <div class="video-section">
+      <h2>Welcome to Our Car Rental Service</h2>
+      <video controls class="rental-video">
+        <source src="assets/vid/invideo-ai-1080 Experience Luxury with Our Super Car Ren 2024-11-04 (1) (1).mp4"
+          type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="our-cars-section">
+    <h2>Our Cars</h2>
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="./assets/img/BMW.jpg" alt="Car 1" class="carousel-image">
+        <img src="./assets/img/Bugatti.jpg" alt="Car 2" class="carousel-image">
+        <img src="./assets/img/Chevrolet.jpg" alt="Car 3" class="carousel-image">
+        <img src="./assets/img/Dodge.jpg" alt="Car 4" class="carousel-image">
+        <img src="./assets/img/Ford.jpg" alt="Car 5" class="carousel-image">
+        <img src="./assets/img/Nissan.jpg" alt="Car 6" class="carousel-image">
+      </div>
+      <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <footer class="fee">
+    <p>&copy; 2024 R3NT Cars. All rights reserved.</p>
+  </footer>
+  
+
+</body>
+<script>
+  let currentIndex = 0;
+
+  function moveCarousel(direction) {
+    const images = document.querySelectorAll('.carousel-image');
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1; // Loop to the last image
+    } else if (currentIndex >= images.length) {
+      currentIndex = 0; // Loop back to the first image
+    }
+
+    images.forEach((img, index) => {
+      img.style.display = index === currentIndex ? 'block' : 'none';
+    });
+  }
+
+  // Initialize the carousel to show the first image
+  moveCarousel(0);
+</script>
+
+</html>
